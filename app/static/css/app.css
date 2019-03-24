@@ -40,3 +40,7 @@ footer  {
 .news__item  h6{
     font-weight: bold;
 }
+
+.container{
+    text-align: center;
+}
