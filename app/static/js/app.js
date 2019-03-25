@@ -84,7 +84,6 @@ const NewsList = Vue.component('news-list', {
             </div>
         </div>
         
-        
 
         `,
     
