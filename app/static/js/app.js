@@ -21,7 +21,9 @@ Vue.component('app-header', {
             </nav>
         </header>    
     `,
-    data: function() {}
+    data: function() {
+        return {}
+    }
 });
 
 Vue.component('app-footer', {
@@ -69,8 +71,8 @@ const NewsList = Vue.component('news-list', {
                     <button class="btn btn-primary mb-2" @click="searchNews">Search</button>
                 </div>
             </div>
-            <div class="news__list">
-                <div v-for="article in articles" class="news__item">
+            <ul class="news__list">
+                <li v-for="article in articles" class="news__item">
                     <div class="news__title">
                         <h6>{{ article.title }}</h6>
                     </div>
@@ -80,8 +82,8 @@ const NewsList = Vue.component('news-list', {
                     <div  class="news__desc">
                         {{ article.description }}
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
 
         `,

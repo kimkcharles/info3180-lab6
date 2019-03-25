@@ -12,6 +12,7 @@ footer  {
     align-content: space-between;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+    list-style-type: none;
 }
 
 .news__item{
